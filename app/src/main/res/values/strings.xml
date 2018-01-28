@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">80\'s Songs and Artists Quiz</string>
+    <string name="hello">hello everyone</string>
+    <string name="banner">Banner</string>
+    <string name="tap_play">Tap Play to hear song</string>
+    <string name="question1">Who sang the song, \"Physical\"\?</string>
+</resources>
