@@ -16,6 +16,13 @@
         android:src="@drawable/banner"
         android:scaleType="centerCrop"
         android:contentDescription="@string/banner"/>
+    <TextView
+        android:background="#69DBF7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:text="@string/object_of_game"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,22 +39,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_play_arrow_black_24dp"
-                android:contentDescription="@string/tap_play"
+                android:contentDescription="@string/play"
+                android:layout_weight="1"
+                android:padding="16dp"
                 android:onClick="play_physical"/>
-            <TextView
+            <ImageView
                 android:background="#69DBF7"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tap_play"/>
+                android:src="@mipmap/ic_pause_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause"
+                android:onClick="pause_physical"/>
+            <ImageView
+                android:background="#69DBF7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_stop_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:onClick="stop_physical"/>
+
         </LinearLayout>
 
         <TextView
             android:background="#69DBF7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question1"/>
+            android:text="@string/question1"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+        <EditText
+            android:background="#69DBF7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist_name"
+            android:id="@+id/physical"
+            android:padding="16dp"/>
 
     </LinearLayout>
-
-
 </LinearLayout>
