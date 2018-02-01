@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#000000"
     android:padding="10dp"
-    tools:context="com.example.android.a80ssongsandartistsquiz.MainActivity">
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/banner"
+        android:contentDescription="@string/banner"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/banner"/>
+        android:src="@drawable/banner" />
     <TextView
         android:background="#69DBF7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
-        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:text="@string/object_of_game"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,51 +38,336 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#69DBF7">
+            android:background="#ffffff">
             <ImageView
-                android:background="#69DBF7"
+                android:background="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_play_arrow_black_24dp"
                 android:contentDescription="@string/play"
                 android:layout_weight="1"
                 android:padding="16dp"
-                android:onClick="play_physical"/>
+                android:onClick="play_song1"/>
             <ImageView
-                android:background="#69DBF7"
+                android:background="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_pause_black_24dp"
                 android:padding="16dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/pause"
-                android:onClick="pause_physical"/>
+                android:onClick="pause_song1"/>
             <ImageView
-                android:background="#69DBF7"
+                android:background="#ffffff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_stop_black_24dp"
                 android:padding="16dp"
                 android:layout_weight="1"
                 android:contentDescription="@string/stop"
-                android:onClick="stop_physical"/>
+                android:onClick="stop_song1"/>
 
         </LinearLayout>
 
         <TextView
-            android:background="#69DBF7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/question1"
+            android:background="#ffffff"
             android:padding="16dp"
-            android:textSize="18sp"/>
+            android:text="@string/question1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
         <EditText
-            android:background="#69DBF7"
+            android:background="#ffffff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/artist_name"
-            android:id="@+id/physical"
+            android:id="@+id/answer1"
             android:padding="16dp"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_24dp"
+                android:contentDescription="@string/play"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:onClick="play_song2"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pause_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause"
+                android:onClick="pause_song2"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_stop_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:onClick="stop_song2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question2"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="22sp"/>
+        <EditText
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist_name"
+            android:id="@+id/answer2"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_24dp"
+                android:contentDescription="@string/play"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:onClick="play_song3"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pause_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause"
+                android:onClick="pause_song3"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_stop_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:onClick="stop_song3"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question3"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="22sp"/>
+        <CheckBox
+            android:background="#ffffff"
+            android:id="@+id/a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/paul_mccartney" />
+
+        <CheckBox
+            android:background="#ffffff"
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/michael_jackson" />
+
+        <CheckBox
+            android:background="#ffffff"
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stevie_wonder" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_24dp"
+                android:contentDescription="@string/play"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:onClick="play_song4"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pause_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause"
+                android:onClick="pause_song4"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_stop_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:onClick="stop_song4"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question4"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="22sp"/>
+        <EditText
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/artist_name"
+            android:id="@+id/answer4"
+            android:padding="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_play_arrow_black_24dp"
+                android:contentDescription="@string/play"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:onClick="play_song5"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pause_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/pause"
+                android:onClick="pause_song5"/>
+            <ImageView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_stop_black_24dp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/stop"
+                android:onClick="stop_song5"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/question5"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="22sp"/>
+        <RadioGroup
+            android:background="#ffffff"
+            android:id="@+id/answer5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/a5"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleX="0.90"
+                android:scaleY="0.90"
+                android:text="@string/a5"/>
+
+            <RadioButton
+                android:id="@+id/b5"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleX="0.90"
+                android:scaleY="0.90"
+                android:text="@string/b5" />
+
+            <RadioButton
+                android:id="@+id/c5"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleX="0.90"
+                android:scaleY="0.90"
+                android:text="@string/c5"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitAnswers"
+        android:text="@string/submit" />
 </LinearLayout>
+</ScrollView>

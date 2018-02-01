@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">80\'s Songs and Artists Quiz</string>
     <string name="hello">hello everyone</string>
     <string name="banner">Banner</string>
@@ -13,4 +13,15 @@
     <string name="play">Play</string>
     <string name="pause">Pause</string>
     <string name="stop">Stop</string>
+    <string name="submit">Submit</string>
+    <string name="paul_mccartney">Paul McCartney</string>
+    <string name="stevie_wonder">Stevie Wonder</string>
+    <string name="michael_jackson">Michael Jackson</string>
+    <string name="b5">Queen</string>
+    <string name="a5">The Eagles</string>
+    <string name="c5">Led Zepplin</string>
+    <string name="share">Share</string>
+    <string name="share_your_score">Share your score with your Friends!</string>
+    <string name="end_message">Thanks for taking the quiz! You got <xliff:g example="amy" id="score">%s</xliff:g> right answers and you got <xliff:g example="amy" id="wrong">%s</xliff:g> wrong answers.</string>
+    <string name="share_message">I got <xliff:g example="amy" id="sharescore">%s</xliff:g> right answers and <xliff:g example="amy" id="sharewrong">%s</xliff:g> wrong answers on the Celebrity Middle Name Quiz!</string>
 </resources>
