@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     int wrong_answers = 0;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         answer3c = findViewById(R.id.c3);
         answer4 = findViewById(R.id.answer4);
         answer5 = findViewById(R.id.answer5);
+
 
     }
 
@@ -154,6 +156,9 @@ public class MainActivity extends AppCompatActivity {
         song5.release();
         song5=null;
     }
+    /**
+     * Method to Submit Answers
+     */
 
     public void submitAnswers(View view) {
 
@@ -227,12 +232,9 @@ public class MainActivity extends AppCompatActivity {
         wrong_answers = 0;
         answer1.getText().clear();
         answer2.getText().clear();
-        CheckBox checkBox1 = findViewById(R.id.a3);
-        checkBox1.setChecked(false);
-        CheckBox checkBox2 = findViewById(R.id.b3);
-        checkBox2.setChecked(false);
-        CheckBox checkBox3 = findViewById(R.id.c3);
-        checkBox3.setChecked(false);
+        answer3a.setChecked(false);
+        answer3b.setChecked(false);
+        answer3c.setChecked(false);
         answer4.getText().clear();
         RadioGroup  group  = findViewById(R.id.answer5);
         group.clearCheck();
